@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="">
+      <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+      <meta name="generator" content="Hugo 0.84.0">
+      <title>Album example · Bootstrap v5.0</title>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+      <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/album/">
+      <!-- Bootstrap core CSS -->
+      <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+      <style>
+         .card-img {
+         max-width: 125px;
+         max-height: 100px;
+         display: block;
+         margin-left: auto;
+         margin-right: auto;
+         }
+         .btn-group {
+         text-align: center;
+         display: block;
+         margin-top: 25px;
+         margin-left: auto;
+         margin-right: auto;
+         }
+         .button {
+         font-size: 20px;
+         }
+      </style>
+   </head>
+   <body>
+      <header>
+         <div class="collapse bg-dark" id="navbarHeader">
+            <div class="container">
+               <div class="row">
+                  <div class="col-sm-8 col-md-7 py-4">
+                     <h4 class="text-white">Instructions</h4>
+                     <p class="text-muted">Select a specific exercise based on your level of experience.</p>
+                  </div>
+                  <div class="col-sm-4 offset-md-1 py-4">
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="navbar navbar-dark bg-dark shadow-sm">
+            <div class="container">
+               <a href="/" class="navbar-brand d-flex align-items-center">
+                  <!-- Bootstrap home button-->
+                  <button type="button" class="btn btn-light">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+                        <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
+                     </svg>
+                     Home
+                  </button>
+               </a>
+               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+                  <!-- Bootstrap help icon/button-->
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-question-circle" viewBox="0 0 16 16">
+                     <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                     <path d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286zm1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94z"/>
+                  </svg>
+               </button>
+            </div>
+         </div>
+      </header>
+      <main>
+         <section class="py-5 text-center container">
+            <div class="row py-lg-5">
+               <div class="col-lg-6 col-md-8 mx-auto">
+                  <h1 class="fw-dark">Arms page</h1>
+                  <p class="lead text-muted">Click on one of the exercise buttons for more detailed information about a particular exercise.</p>
+               </div>
+            </div>
+         </section>
+         <div class="album py-5 bg-light">
+         <div class="container">
+         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+         <div class="col">
+            <div class="card shadow-sm" style="width: 25rem;">
+               <div class="card-body">
+                  <center>
+                     <p class="card-text" style="font-size:30px"><b>Novice</b></p>
+                  </center>
+                  <div class="d-flex justify-content-between align-items-center">
+                     <div class="btn-group">
+                        <button type="button" class="btn btn-lg btn-outline-secondary">Exercise 1</button>
+                     </div>
+                     <div class="btn-group">
+                        <button type="button" class="btn btn-lg btn-outline-secondary">Exercise 2</button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col">
+            <div class="card shadow-sm" style="width: 25rem;">
+               <div class="card-body">
+                  <center>
+                     <p class="card-text" style="font-size:30px"><b>Proficient</b></p>
+                  </center>
+                  <div class="d-flex justify-content-between align-items-center">
+                     <div class="btn-group">
+                        <button type="button" class="btn btn-lg btn-outline-secondary">Exercise 1</button>
+                     </div>
+                     <div class="btn-group">
+                        <button type="button" class="btn btn-lg btn-outline-secondary">Exercise 2</button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col">
+            <div class="card shadow-sm" style="width: 25rem;">
+               <div class="card-body">
+                  <center>
+                     <p class="card-text" style="font-size:30px"><b>Experienced</b></p>
+                  </center>
+                  <div class="d-flex justify-content-between align-items-center">
+                     <div class="btn-group">
+                        <button type="button" class="btn btn-lg btn-outline-secondary">Exercise 1</button>
+                     </div>
+                     <div class="btn-group">
+                        <button type="button" class="btn btn-lg btn-outline-secondary">Exercise 2</button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </main>
+      <footer class="text-muted py-5">
+         <div class="container">
+            <p class="float-end mb-1">
+               <a href="#">Back to top</a>
+            </p>
+         </div>
+      </footer>
+      <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+   </body>
+</html>
