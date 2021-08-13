@@ -3,7 +3,6 @@ import requests
 
 app = Flask(__name__)
 
-
 @app.route("/")
 def home():
     return render_template("home.html")
@@ -53,14 +52,10 @@ def novback1():
     # youtube service request
     payload = {"videoid": "CAwf7n6Luuc"}
     response = requests.get("http://flip1.engr.oregonstate.edu:65334/embedlink", params=payload)
-    #print(response.url)
-    #print(response.text)
     youtube_link = response.text
 
     #Joel's wikipedia scraper service request
     response = requests.get("http://flip3.engr.oregonstate.edu:10664/search?q=Pull-down+(exercise)")
-    #print(response.url)
-    #print(response.text)
     wiki_desc = response.text
 
     return render_template("novback1.html", embed_link=youtube_link, summary = wiki_desc)
@@ -287,7 +282,6 @@ def expchest1():
     wiki_desc = response.text
 
     return render_template("expchest1.html", embed_link=youtube_link, summary = wiki_desc)
-
 
 """
 # transform youtube video id into a youtube embed link and return
